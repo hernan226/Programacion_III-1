@@ -2,6 +2,8 @@
     //INCLUYENDO LIBRERIAS
     include 'funciones.php';
     require_once 'funciones.php';
+    include 'Clases/persona.php';
+    include 'Clases/alumno.php';
 
     echo "Hola Index";
     /*Aplicación Nº 1 (Mostrar variables)
@@ -15,11 +17,16 @@
         echo  "<br>".$nombre.", ".$apellido;
         echo "<br><br><br> Funcion:";
         saludar($nombre);
+        echo "<br><br><br> Objeto:";
+        $variablePersona = new persona($nombre, 3333);
+        echo "<br>Nombre de persona: <br>$variablePersona->nombre<br>";
 
-        /*
-        Aplicación Nº 2 (Sumar dos números)
-        Hacer un programa en PHP que sume el contenido de dos variables $x = -3 y $y = 15. 
-        Mostrar el resultado final.
-        */ 
+        echo "<br><br> Funcion de objeto:";
+        $variablePersona->Saludar();
+        //-----------------------------------------------------------------
+        echo "<br><br>-----------------------------<br><br> Alumno:";
+        $variableAlumno = new Alumno("rodrigo","bravo", 333,33);
+        echo "<br> Atributos:";
+        echo "$variableAlumno->nombre $variableAlumno->legajo $variableAlumno->cuatrimestre";
 
 ?>
