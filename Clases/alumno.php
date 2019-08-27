@@ -1,4 +1,5 @@
 <?php
+include 'Clases/persona.php';
 class Alumno extends Persona
 {
     // Declaración de una propiedad
