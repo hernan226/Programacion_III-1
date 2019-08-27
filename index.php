@@ -1,7 +1,7 @@
 <?php
     //INCLUYENDO LIBRERIAS
     include 'funciones.php';
-    //require 'funciones.php';
+    require_once 'funciones.php';
 
     echo "Hola Index";
     /*Aplicación Nº 1 (Mostrar variables)
