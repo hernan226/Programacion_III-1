@@ -4,5 +4,6 @@ $prueba = new Alumno("",0,0);
 //var_dump($prueba);
 $prueba->Guardar($prueba);
 $prueba->Listar();
+//PHP Y LA CONCHA DE LA LORA
 
 ?>
