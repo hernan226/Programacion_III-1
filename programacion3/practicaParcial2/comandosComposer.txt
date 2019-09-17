@@ -1,0 +1,25 @@
+composer create-project slim/slim-skeleton [my-app-name]
+src/settings.php
+
+"db" => [
+            'driver' => 'mysql',
+            'host' => '127.0.0.1',
+            'database' => 'arjun',
+            'username' => 'root',
+            'password' => '',
+            'collation' => 'utf8mb4_spanish2_ci',
+            'charset' => 'utf8',
+            'prefix' => ''
+        ],
+
+composer require illuminate/database
+
+src/dependencies.php
+
+$dbSettings = $container->get('settings')['db'];
+$capsule = new Illuminate\Database\Capsule\Manager;
+$capsule->addConnection($dbSettings);
+$capsule->bootEloquent();
+$capsule->setAsGlobal();
+
+mkdir app/models

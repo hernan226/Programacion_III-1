@@ -1,0 +1,5 @@
+{"id":1,"usuario":"atr@atr.com.ar","precio":765,"tipo":"piedra","cantidad":"3","sabor":"jamon"}
+{"id":2,"usuario":"atr@atr.com.ar","precio":765,"tipo":"molde","cantidad":"3","sabor":"jamon"}
+{"id":3,"usuario":"atr@atr.com.ar","precio":765,"tipo":"molde","cantidad":"3","sabor":"jamon"}
+{"id":4,"usuario":"toga@atr.com.ar","precio":255,"tipo":"molde","cantidad":"1","sabor":"napolitana"}
+{"id":5,"usuario":"toga@atr.com.ar","precio":1020,"tipo":"piedra","cantidad":"4","sabor":"napolitano"}

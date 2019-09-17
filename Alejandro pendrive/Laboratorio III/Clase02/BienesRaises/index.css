@@ -1,0 +1,174 @@
+
+body{
+    line-height: 2; 
+    font-family: 'Muli', sans-serif; 
+}
+
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.site-header{
+    background: url("./imagenes/header.jpg");
+
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+}
+.contenido-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+.navegacion a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenido-header h1{
+    color: white;
+    padding-bottom: 30px;
+    max-width: 600px;
+}
+
+
+
+.navegacion a:last-of-type{
+    margin: 0;
+}
+
+.navegacion a:hover{
+    color: darkorange;
+}
+
+.h1header h1:hover{
+    color: green;
+}
+
+.contenedor-iconos{
+
+    display: flex;
+    
+}
+
+.iconos{
+
+    flex-basis: calc(33.3% -10px) ;    
+    text-align: center; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.icono h3{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.icono h3 , .icono p{
+
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.icono p {
+    margin-bottom: 30px;
+}
+
+.tituloNosotros{
+    text-align: center;
+    font-size: 32px;
+    
+}
+
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contenedor-anuncios img{
+    width: 100%;
+}
+
+.anuncio{
+    flex-basis: calc(33.3% - 10px);
+    border: 1px solid gray;
+    background: #f5f5f5;
+    margin-bottom: 35px;
+    
+}
+
+.anuncio a{
+    margin: 0px auto;
+}
+
+
+.contenidoAnuncio{
+    padding : 25px 20px;    
+}
+
+.contenidoAnuncio h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.precio{
+    color: green;
+}
+
+.tituloCasasYDeptos{
+    text-align: center;
+    font-size: 32px;
+}
+
+.boton{
+    text-decoration:none;
+    padding: 10px 30px;
+    color: white;
+    font-size: 18px;
+    width: 250px;
+    display: block;
+    text-align: center;
+}
+
+.boton-naranja{
+    background-color: #e08709;
+}
+.comodidades{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.comodidades li{
+    margin-right: 20px;
+}
+.boton-verde{
+    background-color: #71b100; 
+
+}
+
+.contenedor-ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}

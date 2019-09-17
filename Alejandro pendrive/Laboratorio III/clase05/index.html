@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practica</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    
+    <form action="./auxiliar.html" method="GET">
+        <fieldset>
+            <legend>Datos</legend>
+            <p>Titulo: <input type="text" id="txtTitulo" required onchange="validaTexto();"></p>
+            <p>Descripcion: <br><TExtarea id="txtDescripcion" rows="5" required></TExtarea></p>
+            
+            <label for="venta">Venta</label>
+            <input type="radio" id="venta" name="Operacion" ><br>
+            <label for="Alquiler">Alquiler</label>
+            <input type="radio" id="Alquiler" name="Operacion" ><br>
+            <label for="precio">Precio: </label>
+            <input type="text" name="" id="precio" onchange="validaPrecio()"><br>
+            <label for="txtDormitorio">Dormitorios:</label>
+                <input type="number"  id="txtDormitorio" min="0" max="5"> <br>
+            <label for="txtBaño">Baños:</label>
+                <input type="number"  id="txtBaño" min="1" max="5"><br>
+            <label for="txtCochera">Cocheras:</label>
+                <input type="number"  id="txtCochera" min="0" max="5"><br>
+        </fieldset>
+        
+        <input type="submit" value="Enviar">
+    </form>
+    <button id="boton" onclick="getFormulario();">CLICK HERE</button>
+</body>
+</html>

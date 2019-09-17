@@ -1,0 +1,42 @@
+Proveedores
+INSERT INTO `proveedores`(`Nombre`, `Domicilio`, `Localidad`) VALUES ("Perez","Peron 876","Quilmes"),("Gimenez","Mitre 750","Avellaneda"),("Aguirre","Boedo 634","Bernal")
+
+Productos
+INSERT INTO `Productos`(`pNombre`, `Precio`, `Tamanio`) VALUES ("Caramelos",1.5,"Chico"),("Cigarillos",45.89,"Mediano"),("Gaseosa",15.80,"Grande")
+
+Envios
+INSERT INTO `envios`(`Numero`, `pNumero`, `Cantidad`) VALUES (100,1,500),(100,2,1500),(100,3,100),(101,2,55),(101,3,255),(102,1,600),(102,3,300)
+
+1)SELECT * FROM productos ORDER BY pNombre ASC
+
+2)SELECT * FROM `proveedores` WHERE Localidad="quilmes"
+
+3)SELECT * FROM `envios` WHERE Cantidad BETWEEN 200 AND 300
+
+4)SELECT SUM(Cantidad) FROM `envios`
+
+5)SELECT pNumero FROM envios LIMIT 3
+
+6)SELECT proveedores.Nombre AS Proveedor, productos.pNombre AS Producto FROM proveedores,productos,envios WHERE proveedores.Numero = envios.Numero AND productos.pNumero = envios.pNumero
+
+7)SELECT proveedores.Nombre AS Proveedor, productos.pNombre AS Producto, ROUND(envios.Cantidad * productos.Precio, 2) AS Monto FROM proveedores,productos,envios  WHERE proveedores.Numero = envios.Numero AND productos.pNumero = envios.pNumero
+
+8)SELECT Cantidad FROM envios WHERE Numero=102 AND pNumero=1
+
+9)SELECT envios.pNumero AS numeroProducto FROM envios,proveedores WHERE proveedores.Localidad="avellaneda" AND proveedores.Numero=envios.Numero
+
+10)SELECT Domicilio,Localidad FROM proveedores WHERE Nombre LIKE '%i%'
+
+11)INSERT INTO `productos`(`pNombre`, `Precio`, `Tamanio`) VALUES ("Chocolate",25.35,"Chico")
+
+12) INSERT INTO proveedores VALUES ()
+
+13)INSERT INTO proveedores(`Numero`, `Nombre`, `Localidad`) VALUES (107,"Rosales","La Plata")
+
+14)UPDATE productos SET Precio=97.50 WHERE Tamanio="grande"
+
+15)UPDATE productos, envios SET productos.Tamanio="Mediano" WHERE productos.pNumero=envios.pNumero AND envios.Cantidad >=300 AND productos.Tamanio="Chico"
+
+16)DELETE FROM productos WHERE pNumero=1
+
+17)DELETE FROM proveedores WHERE Numero NOT IN(SELECT Numero FROM envios)

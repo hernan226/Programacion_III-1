@@ -1,0 +1,6 @@
+{"id":1,"tipo":"piedra","precio":"255","foto":".\/Fotos\/1.jpg","cantidad":"15","sabor":"jamon"}
+{"id":2,"tipo":"molde","precio":"255","foto":".\/Fotos\/2.jpg","cantidad":"22","sabor":"jamon"}
+{"id":3,"tipo":"molde","precio":"255","foto":".\/Fotos\/3.jpg","cantidad":"22","sabor":"napo"}
+{"id":4,"tipo":"piedra","precio":"255","foto":".\/Fotos\/4.jpg","cantidad":"17","sabor":"napo"}
+{"id":5,"tipo":"molde","precio":"255","foto":".\/Fotos\/5.jpg","cantidad":"30","sabor":"muzza"}
+{"id":6,"tipo":"piedra","precio":"255","foto":".\/Fotos\/6.jpg","cantidad":"30","sabor":"muzza"}

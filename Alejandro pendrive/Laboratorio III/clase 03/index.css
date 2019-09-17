@@ -1,0 +1,42 @@
+
+
+
+/*
+*{
+ESTO APLICA PARA TODO
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+*/
+
+/*esto es para ID*/
+#miparrafo{
+    background: rgb(0, 139, 139);
+    margin: 50px 0px 16px;
+}
+
+/*esto es para clases*/
+.azul{
+    color: blue;
+}
+.grande{
+    background: black;
+}
+
+/*ASI PARA LLAMAR A VARIOS*/
+h1,h3,#id{
+    background: pink;
+}
+
+body{
+    height: 2000px;
+
+    background-image: url("./honda.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 02</title>
+
+
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./scripts/script.js"></script>
+    
+
+</head>
+<body>
+    
+    <form action="./pagina2.html" method="GET">
+
+        <fieldset>
+
+            <legend>DATOS PERSONALES</legend>
+
+            <div>
+                <label for="txtnombre">Nombre: </label>
+                <input type="text"  id="txtnombre"          required>
+            </div>
+
+            <div>
+                    <label for="txtpassword" >Contraseña: </label>
+                    <input type="password"  id="txtpassword" title="aca va el pasword" placeholder="contraseña">
+            </div>
+
+           <input type="submit" value="SEND">
+            
+           <div>
+                <label for="txtEdad">Edad: </label>
+                <input type="text"  id="txtEdad" name= "edad" value="23"  readonly disabled> <!--  -->
+            </div>
+  
+            <div>
+                <label for="txtEdad2">Edad: </label>
+                <input type="number"  id="txtEdad" name= "edad"  min="18" max="60" value="18" > <!--  -->
+            </div>
+            <div>
+                <label for="txtEdad2">Edad: </label>
+                <input type="range"  id="txtEdad" name= "edad"  min="18" max="60" value="50"> <!--  -->
+            </div>
+            <div>
+                <label for="cboPais">Pais</label>
+                <select name="pais" id="cboPais">
+                    <optgroup label="Paises de america" >
+
+                            <option value="argentina">argentina</option>
+                            <option value="brasil">brasil</option>
+                            <option value="chile">chile</option>
+                            <option value="peru">peru</option>
+                            <option value="mexico">mexico</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="italia" selected>italia</option >
+                        <option value="españa">españa</option>
+                      </optgroup>
+
+
+                </select>
+            </div>
+
+            <fieldset >
+                <legend>GENERO</legend>
+                <input type="radio" name="sexo" id="rdoMasculino"><label for="rdoMasculino">Masculino</label>
+                <input type="radio" name="sexo" id="rdoFemenino" checked><label for="rdoFemenino">Femenino</label>
+            </fieldset>
+            
+            <fieldset >
+                    <legend>Hobbies</legend>
+                    <input type="checkbox" id="chkEsqui" ><label for="chkEsqui">esqui</label>
+                    <input type="checkbox"  id="chkBOX" ><label for="chkBOX">box</label>
+                </fieldset>
+            <input type="hidden" name="">
+
+
+        </fieldset>
+
+        <input type="reset"><!-- Devuelve el formulario a su estado original -->
+
+    </form>
+
+    <button id="btnSaludar">Saluda</button>
+</body>
+</html>
