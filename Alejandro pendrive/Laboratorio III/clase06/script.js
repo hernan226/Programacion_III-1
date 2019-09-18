@@ -9,6 +9,7 @@ function inicializarManejadores()
     // document.getElementsById('frmAlta')[0];
     frm.addEventListener('submit', manejadorSubmit);
     //frm.onSubmit(){};
+    console.log("AAAAAAAAAAAAAA");
 }
 function manejadorSubmit(e)
 {
@@ -16,6 +17,7 @@ function manejadorSubmit(e)
     //console.log(e.target);
     let nuevaMascota=obtenerMascota(e.target);
     mascotas.push(nuevaMascota);
+    document.getElementById("divTabla").innerHTML = " ";
     document.getElementById("divTabla").appendChild(crearTabla(mascotas));
     
 }
@@ -61,15 +63,6 @@ function obtenerMascota(frm){
 
     console.log(frm.elements);
 }
-
-
-
-
-
-
-
-
-
 
 
 function operar(a,b,callback)
