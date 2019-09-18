@@ -4,3 +4,4 @@ cambiar cursor a manito
 cuando se clickee un registro de la tabla se 
 llene el formulario con esos datos.
 
+crear pagina de admin

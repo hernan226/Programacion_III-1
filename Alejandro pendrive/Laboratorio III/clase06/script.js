@@ -1,16 +1,5 @@
 var frm;
 
-function publicacion(titulo,descripcion,tipoOperacion,precio,dormitorios,baños,cocheras){
-    this.titulo=titulo;
-    this.descripcion=descripcion;
-    this.operacion=tipoOperacion;
-    this.precio=precio;
-    this.dormitorios=dormitorios;
-    this.baños= baños;
-    this.cocheras=cocheras;
-
-}
-
 window.addEventListener('load', inicializarManejadores);
 
 function inicializarManejadores()
@@ -27,6 +16,7 @@ function manejadorSubmit(e)
     //console.log(e.target);
     let nuevaMascota=obtenerMascota(e.target);
     mascotas.push(nuevaMascota);
+    document.getElementById("divTabla").appendChild(crearTabla(mascotas));
     
 }
 function obtenerMascota(frm){
