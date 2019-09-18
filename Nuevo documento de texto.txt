@@ -1,0 +1,6 @@
+campos requerido
+input enumerable
+cambiar cursor a manito
+cuando se clickee un registro de la tabla se 
+llene el formulario con esos datos.
+
