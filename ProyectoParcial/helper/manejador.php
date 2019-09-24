@@ -30,9 +30,12 @@ class manejador{
     {
         
     }
-    function TraerElementos()
+    function TraerElementos($archivo)
     {
-
+        $arch=fopen($archivo,"r");
+        $rta = fread($arch,filesize($archivo));
+        fclose($arch);
+        return json_decode($rta,true);
     }
 }
 ?>

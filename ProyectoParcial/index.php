@@ -8,5 +8,5 @@
     require_once 'helper/manejadorSolicitudes.php';
     
     $persona=new Persona("Rodrigo","Bravo","30-03-1991");
-    
+    manejadorDeArchivos::guardarDato("test.txt",$persona);
 ?>
