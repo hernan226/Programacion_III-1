@@ -5,3 +5,14 @@ cuando se clickee un registro de la tabla se
 llene el formulario con esos datos.
 
 crear pagina de admin
+
+
+
+
+
+
+
+
+xhr.setrequestheader("Content.type", "Application/json");
+
+xhr.send(json.stringfy(persona));
