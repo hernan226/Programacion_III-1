@@ -34,6 +34,7 @@ switch($_SERVER["REQUEST_METHOD"]){
                 break;
             }
             case "inscripciones":{
+                var_dump(date("d/m/Y"));
                 if(isset($_GET["apellido"]))
                 {
                     inscripcion::traerInscriptosPorApellidoMateria($_GET['apellido'], "apellido");
@@ -41,6 +42,7 @@ switch($_SERVER["REQUEST_METHOD"]){
                 }
                 if(isset($_GET["codigoMateria"]))
                 {
+                    
                     inscripcion::traerInscriptosPorApellidoMateria($_GET['codigoMateria'], "codigoMateria");
                     break;
                 }
