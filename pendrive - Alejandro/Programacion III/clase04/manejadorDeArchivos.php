@@ -52,11 +52,6 @@ class manejadorDeArchivos{
         }
         manejadorDeArchivos::guardarTodo($archivo,$rta);
     }
-
-
-
-
-
-
-
 }
+
+?>
