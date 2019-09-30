@@ -1,1 +1,1 @@
-[{"nombre":"nombreTest","codigo":"1000","cupo":"100","aula":"33"}]
+[{"nombre":"nombreTest","codigo":"1000","cupo":72,"aula":"33"}]

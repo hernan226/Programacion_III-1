@@ -4,6 +4,7 @@
 include "manejadorDeArchivos.php";
 include "alumnos.php";
 include "materias.php";
+include "inscripcion.php";
 
 
 switch($_SERVER["REQUEST_METHOD"]){
@@ -21,14 +22,28 @@ switch($_SERVER["REQUEST_METHOD"]){
                 break;
             }
             case "inscribirAlumno":{
-                
+                //caso: inscribirAlumno (get): Se recibe nombre, apellido, mail del alumno, materia y código de la materia 
+                //y se guarda en el archivo inscripciones.txt restando un cupo a la materia en el archivo materias.txt. Si no hay 
+                //cupo o la materia no existe informar cada caso particular.
+
+                inscripcion::inscribirAlumno($_GET);
+                break;
+            }
+            case "inscripcionesSinParam":{
+                inscripcion::traerInscriptos();
                 break;
             }
             case "inscripciones":{
-                break;
-            }
-            case "inscripciones":{
-                break;
+                if(isset($_GET["apellido"]))
+                {
+                    inscripcion::traerInscriptosPorApellidoMateria($_GET['apellido'], "apellido");
+                    break;
+                }
+                if(isset($_GET["codigoMateria"]))
+                {
+                    inscripcion::traerInscriptosPorApellidoMateria($_GET['codigoMateria'], "codigoMateria");
+                    break;
+                }
             }
             case "alumnos":{
                 break;

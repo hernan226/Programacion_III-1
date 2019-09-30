@@ -36,8 +36,16 @@ class manejadorDeArchivos{
         $com='"';
         $valorBuscado="$com$keyId$com:$com$valueId$com";
         $var=json_encode($lista);
-        return strpos(strtolower($var), strtolower($valorBuscado));
-    }
+        return strpos($var, $valorBuscado);
+
+        /*
+            foreach($lista as $elem){
+            if(!($elem[$keyId]==$valueId)){
+                return true;
+            }
+        }
+        */
+     }
 
     public static function eliminar($archivo,$tipoId,$id){
         
