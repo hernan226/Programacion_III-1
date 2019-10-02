@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>        
+        #Main
+        {
+            width: 700px;
+            margin: auto;
+            background-color: brown;
+            color: white;
+        }
+        .Simple
+        {
+            width: 500px;
+            margin: 20px auto;
+            background-color: darkblue;
+            color: white;
+        }
+        .Simple2
+        {
+            width: 500px;
+            margin: 20px auto;
+            background-color: rgba(0, 0, 139, 0.295);
+            color: white;
+                -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+        }
+        .Fancy
+        {
+            width: 500px;
+            margin: 20px auto;
+            background-color: rgb(5, 59, 41);
+            padding: 50px;
+            border-width: 10px;
+            color: white;
+        }
+        .Static
+        {
+            position: static;
+            width: 500px;
+            margin: 20px auto;
+            background-color: rgb(5, 59, 52);
+            padding: 50px;
+            border-width: 10px;
+            color: white;
+
+        }
+        .Relative
+        {
+            position: relative;
+            width: 500px;
+            margin: 20px auto;
+            background-color: rgba(0, 139, 12, 0.247);
+            color: white;
+        }
+        .Relative2
+        {
+            position: relative;
+            top: -30px;
+            right: -100px;
+            width: 500px;
+            margin: 20px auto;
+            background-color: rgb(196, 32, 32);
+            color: white;
+        }
+        .Fixed
+        {
+            position: fixed;            
+            width: 500px;
+            background-color: rgb(41, 6, 46);
+            color: white;
+        }
+        .RelativePadre
+        {
+            width: 500px;
+            margin: 20px auto;
+            background-color: rgb(51, 59, 5);
+            padding: 50px;
+            border-width: 10px;
+            color: white;
+        }
+        .Absolute
+        {
+            width: 500px;
+            margin: 20px auto;
+            background-color: rgb(44, 8, 8);
+            color: white;
+        }
+     </style>
+</head>
+<body>
+    <div id="Main">
+        <input type="button" value="Aceptar">
+        Main
+           </div>
+    <div class=Simple>
+        Simple
+        </div>
+    <div class=Fancy>
+        Fancy
+        </div>
+    <div class=Simple2>
+        Simple  (es dinstinto por dentro)
+        </div>
+    <div class=Static>
+            Estatico
+        </div>
+    <div class=Relative>
+        relativo 1
+        </div>
+    <div class=Relative2>
+            relativo 2
+        </div>
+    <div class=Fixed>
+            Fixed
+        </div>
+    <div class=RelativePadre>
+            relativo padre
+            <div class=Absolute>
+                    absolute
+                </div>
+        </div>
+    
+    
+</body>
+</html>

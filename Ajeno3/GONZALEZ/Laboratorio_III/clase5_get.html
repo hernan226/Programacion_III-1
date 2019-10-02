@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="myScript_clase5.js"></script>
+</head>
+<body id="cuerpo">
+    <form method="GET" action="clase5_get.html" target="_blank">
+        <label>Nombre: </label>
+        <input type="text" id="usr">
+        <br>
+        <label id="header_contraseña">Apellido: </label>
+        <input type="text" id="password">
+        <br>
+        <label>Fecha: </label>
+        <input type="text" id="fech">
+        <br>
+        <label>Telefono: </label>
+        <input type="text" id="tel">
+        <br>
+        <button value="Enviar" onclick="ajax('POST','http://localhost:3000/nuevaPersona',getUserData)">Enviar</button>
+    </form>
+    <table id='tabla'></table>
+    <img id='logo_cargando' class="noMostrar" src='Loading_icon.gif'>
+
+</body>
+</html>

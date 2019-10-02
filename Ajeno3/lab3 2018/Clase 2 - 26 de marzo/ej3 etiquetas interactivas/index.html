@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo 2</title>
+</head>
+
+<body>
+        <dialog id="dlgDialog" >
+                <h2>Laboratorio de computacion</h2>
+                <p>Profesores: Bauss\Mutti</p>
+                <p>Martes turno noche</p>
+                <p>Año 2019</p>
+        </dialog>
+
+    <button id="btnDialog">Abrir dialog</button>
+
+    <h1>Lenguajes de programacion</h1>
+    <details>
+        <summary>Javascript</summary>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quam neque enim. Ratione delectus mollitia veniam eveniet
+        rerum in voluptate at temporibus amet, magni ad doloribus animi ab quaerat eius.
+    </details>
+
+    <script>
+            
+                var btn = document.getElementById("btnDialog");
+            
+                btn.addEventListener("click", function(){
+                    var modal = document.getElementById("dlgDialog");
+                        modal.setAttribute('open', true);
+                })
+            
+                </script>
+
+</body>
+
+</html>

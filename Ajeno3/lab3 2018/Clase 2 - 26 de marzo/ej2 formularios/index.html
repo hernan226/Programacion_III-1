@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- un favicon -->
+    <link rel="shortcut icon" href="./images/logoutn.jpg" type="image/x-icon">
+    <title>Ejemplo 2</title>
+</head>
+<body>
+    
+    <!-- una pequeña guia -->
+    <!-- https://developer.mozilla.org/es/docs/Web/HTML/Elemento -->
+
+    <h1>Formularios</h1>
+
+    <form action="#" method="get" id="frmLogin">
+
+        <fieldset disabled="disabled">
+        <legend>Datos personales</legend>
+
+        <label for="txtNombre">Nombre</label>
+        <input type="text" id="txtNombre" placeholder="Ingrese su nombre" required>
+
+        <br><br>
+
+        <label for="txtPassword">Clave</label>
+        <input type="password" id="txtPassword" placeholder="Ingrese su clave" required>
+
+        </fieldset>
+
+        <br><br>
+
+        <label for="txtEmail">Email</label>
+        <input type="email" id="txtEmail" placeholder="Ingrese su email" required>
+
+        <br><br>
+
+        <label for="txtNumber">Email</label>
+        <input type="number" id="txtNumber" placeholder="Ingrese su number" required min="1" max="10" value="5">
+
+        <br><br>
+
+        <label for="txtFile">Archivo</label>
+        <input type="file" id="txtFile" placeholder="Ingrese su file" accept="image/*">
+
+        <br><br>
+        
+        <label for="txtDate">Fecha</label>
+        <input type="date" id="txtDate" placeholder="Ingrese su Date" accept="image/*">
+
+        <br><br>
+
+        <select name="" id="">
+            <optgroup label="Languages 1">
+                <option value="0">C#</option>
+                <option value="1">C++</option>
+                <option value="2">C</option>
+            </optgroup>
+            <optgroup label="Languages 2">
+                <option value="3">JavaScript</option>
+                <option value="4">Java</option>
+            </optgroup>
+        </select>      
+        
+        <br><br>
+
+        <label for="chbNada">Nada</label>
+        <input type="checkbox" name="" id="chbNada"> <br>
+        <label for="chbBici">Bicicleta</label>
+        <input type="checkbox" name="" id="chbBici"> <br>
+        <label for="chbPatin">Patina</label>
+        <input type="checkbox" name="" id="chbPatin">
+
+        <br><br>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="rdMasculino">Masculino</label>
+            <input type="radio" name="sexo" id="rdMasculino"> <br>
+
+            <label for="rdFemenino">Femenino</label>
+            <input type="radio" name="sexo" id="rdFemenino">
+
+        </fieldset>
+
+        <br><br>
+
+        <label for="txtaComentarios">Comentarios</label><br>
+        <textarea name="" id="txtaComentarios" cols="30" rows="10"></textarea>
+
+        <br><br>
+
+        <input type="button" value="un boton">
+        <input type="submit" id="btnEnviar">
+        <input type="reset">
+
+        <h2>Lab III UTN-FRA todos los derechos reservados &copy;</h2>
+
+        <p>E = m * c <sub>2</sub></p>
+        <p>H<sub>2</sub>O</p>
+        <p><u>Esto esta subrayado</u></p>
+        <p><mark>Esto esta resaltado</mark></p>
+        <p><del>Esto esta tachado</del></p>
+    </form>
+
+    <script>
+    
+    var txtNombre = document.getElementById('txtNombre');
+
+    var frm = document.getElementById('frmLogin');
+
+    frm.addEventListener('submit', manejarSubmit);
+    
+    function manejarSubmit(e){
+        e.preventDefault();
+        alert("Maneje el event skeree");
+    }
+
+    //callback = pasar una funcion a otra funcion
+
+    //FUNCION ANONIMA
+    /*var frm = document.getElementById('frmLogin');
+
+    frm.addEventListener('submit', function(e){
+        e.preventDefault();
+        alert("Maneje el event skeree");
+    });*/
+
+    //ARROW FUNCTION
+    /*var frm = document.getElementById('frmLogin');
+
+    frm.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        alert("Maneje el event skeree");
+    });*/
+
+    </script>
+    
+</body>
+</html>

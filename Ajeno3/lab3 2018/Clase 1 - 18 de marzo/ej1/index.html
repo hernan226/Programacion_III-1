@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta de description, es importante -->
+    <meta type="description" content="Modo diablo skere pum shakalaka pum">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo 1</title>
+    <style>
+        span {
+            color: blue;
+        }
+
+        div {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- abreviaciones de emmet https://docs.emmet.io/cheat-sheet/ -->
+    hola mundo
+    <!-- div (para elemento de bloque) y span (para elementos en linea) son etiquetas contenedoras -->
+    <!-- con la abreviacion lorem podemos rellenar -->
+    <!-- si tenes apretado alt con las flechas podes mover la linea de codigo -->
+    <div>
+        Esto es un div
+    </div>
+    <span>
+        Esto es un span
+    </span>
+    <div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos, quis ad consequatur culpa recusandae
+            numquam veritatis <span>quasi illum nesciunt quam consectetur</span> error eveniet laboriosam expedita
+            sapiente libero,
+            at reiciendis.
+        </p>
+    </div>
+
+    <h1>Esto es un h1</h1>
+    <h2>Esto es un h2</h2>
+    <!--     
+    tipos de lista 
+    ul unordered list 
+    ol oredered list 
+    dl definition list
+-->
+
+    <h2>Bebidas</h2>
+
+    <ol>
+        <li>Coca
+            <ul>
+                <li>Coca</li>
+                <li>Fanta</li>
+                <li>Sprite</li>
+            </ul>
+        </li>
+        <li>Pepsi</li>
+    </ol>
+
+    <dl>
+        <dt>
+            <!-- definition term -->
+            Visual Basic
+        </dt>
+        <dd>
+            <!-- data definition -->
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, porro? Nemo asperiores veritatis
+            corporis illum alias quidem vero earum, dolorum fugit modi ut rerum unde ad, amet atque officiis quas!
+        </dd>
+        <dt>
+            <!-- definition term -->
+            C#
+        </dt>
+        <dd>
+            <!-- data definition -->
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, porro? Nemo asperiores veritatis
+            corporis illum alias quidem vero earum, dolorum fugit modi ut rerum unde ad, amet atque officiis quas!
+        </dd>
+    </dl>
+
+    <!-- tablas -->
+    <!-- 
+        table table
+        tr table row
+        td table data
+        th table head
+        propiedad colspan para que el head se extienda
+     -->
+    <table border="1px">
+        <thead>
+            <tr>
+                <th colspan="3">Materias</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Programacion 1</td>
+                <td>Programacion 2</td>
+                <td>Programacion 3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">7</td>
+                <td>8</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img src="./images/logoHTML5.jpg" alt="logo de html5" title="LOGO HTML5">
+    <!-- fotos libres https://www.pexels.com/ -->
+    <img src="https://images.pexels.com/photos/940872/pexels-photo-940872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+    
+    <!-- 
+        con code puedo mostrar codigo como texto plano pero en una misma linea
+        con pre te lo muestra tal cual lo ponemos
+    -->
+    <code>
+        <pre>
+           function saludar(){
+            console.log("Hola Mundo");
+        } 
+        </pre>
+    </code>
+    <!-- 
+        video es parecida a img
+        propiedad controls pone los controles
+        propiedad poster muestra una imagen cuando el video esta en pausa
+    -->
+    <video src="./media/video.mp4" controls width="500px" poster="./images/fotoNaturaleza.jpg"></video>
+
+</body>
+
+</html>
