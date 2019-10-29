@@ -16,3 +16,7 @@ crear pagina de admin
 xhr.setrequestheader("Content.type", "Application/json");
 
 xhr.send(json.stringfy(persona));
+
+
+
+jwt.io autenticacion
