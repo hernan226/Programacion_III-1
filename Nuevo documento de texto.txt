@@ -20,3 +20,5 @@ xhr.send(json.stringfy(persona));
 
 
 jwt.io autenticacion
+
+https://github.com/esp8266/arduino
